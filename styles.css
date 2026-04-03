@@ -1,12 +1,7 @@
 body {
     background-color: #F2DDC2;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
-
+    margin: 0;
 }
 
 header {
