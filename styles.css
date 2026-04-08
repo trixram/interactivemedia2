@@ -19,7 +19,7 @@ header {
 main { 
     position: relative;
     z-index: 1;
-    margin: 50px 100px;
+    margin: 50px 150px;
     background-color: #724130;
     border: #623323 5px solid;
     padding: 20px;
@@ -46,7 +46,8 @@ h3 {
 
 .left-side, .right-side  { 
     display: flex; 
-    padding: 0 80px;
+    padding: 10px;
+    /* padding: 0 80px; */
     flex-direction: column;
     align-items: center;
     /* margin: auto 20px; */
@@ -88,8 +89,9 @@ h3 {
       border-radius: 10px;
       font-size: 20px;
     list-style-type: none;
-    padding: 50px;
+    padding: 45px;
     width: 400px;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -114,6 +116,7 @@ h3 {
     display:flex;
     flex-direction: column;
     gap: 5px;
+   left: 40px
 }
 
 .sticky-notes ul li {
