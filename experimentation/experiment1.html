@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Look in the console to see the results</h1>
+    <script>
+        /* sequence step 1 */
+        var myText = "Chicken crossed the road"; 
+
+        /* sequence step 2 */
+        var newString = ""
+
+        /* sequence step 3 */
+        console.log(myText);
+
+        /* sequence step 4 */
+        for(var i=0; i<myText.length; i++) {
+
+           /*  sequences 5 */
+            if(myText[i]== 'e' || 
+            myText[i] == 'a' ||
+            myText[i] == 'i'||
+            myText[i] == 'o' ||
+            myText[i] == 'u'){
+
+               newString += myText[i].toUpperCase();
+            }
+
+            else {
+                newString += myText[i];
+            }
+        }
+        /* sequence atep 6: print out the final string */
+        console.log(newString);
+
+
+
+    </script> 
+    
+</body>
+</html>

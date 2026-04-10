@@ -3,23 +3,74 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     max-width: 100%; */
-    margin: auto;
-    background-color: #F2DDC2;
+    margin: auto ;
+   background: url(images/background\ \(1\).png);
+   background-repeat: no-repeat;
     /* background-position: 50%; */
-    height: auto;
-    width: auto;
+   overflow-x: hidden;
+
 }
 
+.banner h1 {
+    display: none;
+}
 
-banner img {
-    padding: 0; 
-    margin: 0;
+.banner {
+    position: relative;
+    background: url(images/banner.png);
+    height: 30px;
+    z-index: 3;
+}
+
+.sign {
+    position: relative;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    animation: swing 2.5s infinite ease-in-out;
+}
+
+@keyframes swing {
+    0% {
+        rotate: -6deg;
+    }
+
+
+    50% {
+        rotate: 6deg;
+    }
+
+    100% {
+        rotate: -6deg;
+    }
+
+    
+}
+
+.sign p {
+    z-index: 3;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.5em;
+    position: absolute;
+    top: 50px;
+}
+.sign img {
+    position: absolute;
+    max-width: 100%;
+    width: 250px;
+    top: -55px;
 }
 
 main { 
     position: relative;
     z-index: 1;
-    margin: 50px 200px;
+    margin: 215px auto 20px;
+    max-width: 1000px;
+    max-height: 650px;
     background-color: #724130;
     border: #623323 5px solid;
     padding: 20px;
@@ -37,7 +88,7 @@ h1 {
     font-family: "Mali";
   font-weight: 400;
   font-size: 35px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 h3 {
@@ -47,20 +98,21 @@ h3 {
 
 .left-side, .right-side  { 
     display: flex; 
-    padding: 10px;
+    /* padding: 10px; */
     /* padding: 0 80px; */
     flex-direction: column;
     align-items: center;
     /* margin: auto 20px; */
     justify-content: center;
     max-width: 100%;
+    width: 50%;
 }
 
 .right-side .links {
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px;
-    gap: 45px; 
+    grid-template-rows: 120px 150px;
+    gap: 25px;
     list-style: none;
     
 }
@@ -70,19 +122,38 @@ h3 {
 }
 
 .left-side {
-    margin: 30px 20px;
-    /* background: url(images/green_gingham.png); */
-    padding: 15px;
-    width: 500px;
+    position: relative;
+    margin: 10px  auto;
     border-radius: 15px;
+    gap: 30px;
     /* border: 5px solid rgb(159, 187, 152); */
 }
 
-.left-side img {
+.left-side .profile {
     max-width: 100%;
-    width: 346px;
-    height: 500px;
+    width: 250px;
 
+    background: url(images/green_gingham.png);
+    padding: 20px 40px 0px 40px ;
+    border-radius: 10px;
+    border: 5px #A3B276 solid;
+}
+
+.left-side .bread, .left-side .baguette {
+    position: absolute;
+     max-width: 100%;
+    width: 90px;
+}
+
+.left-side .bread {
+    top: 60px;
+    left: 35px;
+    transform: rotate(-90deg);
+}
+
+.left-side .baguette {
+    bottom: 85px;
+    right: 35px;
 }
 
 .row-emojis {
@@ -101,9 +172,48 @@ h3 {
 } */
 
 
+.right-side {
+    position: relative;
+}
+
+.right-side .grass {
+    max-width: 100%;
+    width: 600px;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+}
+
+.right-side .cat {
+    max-width: 100%;
+    width: 150px;
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+}
+
+.right-side .clouds {
+        max-width: 100%;
+        width: 550px;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+}
+
+.left-side .letters {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.letters img {
+        max-width: 100%;
+    width: 145px;
+}
 
 
-.right-side  ul {
+
+.links ul {
      padding: 20px;
    /* width: 150px; */
 
@@ -113,6 +223,8 @@ h3 {
        flex-direction: column;
 
 }
+
+
 
 
 .right-side ul li { 
@@ -134,18 +246,17 @@ h3 {
 
 .sticky-notes {
     position: sticky;
-    padding-left: 30px;
     margin-left: 0;
+     position: absolute;
+    right: -20px;
 }
 
 .right-side ul li a, .sticky-notes ul li a { 
     text-decoration: none;
+    
 }
 
 .sticky-notes ul {
-    position: absolute;
-    padding: 0;
-    z-index: -1;
     display:flex;
     flex-direction: column;
     gap: 15px;
@@ -156,8 +267,9 @@ h3 {
 .sticky-notes ul li {
      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
      list-style-type: none;
-     padding: 30px;
-     border-radius: 0 10px 10px 0;
+     padding: 25px;
+
+     border-radius: 0 8px 8px 0;
 }
 
 .red, .red-four {
@@ -172,15 +284,18 @@ h3 {
 background-color:#FFF0A5 ;
 }
 
-.green, .green-one {
+.green {
 
-background-color: #468966;
+ background-color: #A54B29;
 }
 
 
 .green-one {
     transform:rotate(-2deg);
+    background-color: #A54B29;
 }
+
+
 
 .yellow-two {
     transform: rotate(3deg);
@@ -196,24 +311,29 @@ background-color: #468966;
 
 .line {
     z-index: 1;
-    /* position: absolute; */
+    position: absolute;
+    /* padding-top: 0;
+    margin: 0; */
+    top: 0px;
     width: 5px;
     max-width: 100%;
     max-height: 100%;
-    height: 750px;
+    height: 610px;
     padding: 1px;
     background-color: #E9DCCA;
 
 }
 
 .paper {
+    /* flex-wrap: wrap; */
      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     position: relative;
-    z-index: -1;
+    z-index: 1;
     /* gap: 10px; */
     margin: auto;
     max-width: 100%;
-    padding: 5px;
+    max-height: 575px;
+    padding: 15px;
     background-color: #FFF8EE;
     border: #E9DCC9 5px solid;
     border-radius: 15px;
@@ -222,10 +342,30 @@ background-color: #468966;
     justify-content: space-around;
 }
 
+
+
+.letter-one:hover, .letter-three:hover {
+    animation: shake 0.35s infinite ease-in-out
+}
  
+@keyframes shake {
+    0% {
+        rotate:calc(-2deg);
+    }
+
+    50% {
+        rotate: calc(2deg);
+    }
+
+    100% {
+        rotate: calc(-2deg);
+    }
+}
+
 footer {
-    background-color: #A5904D;
+    background: url(images/footer\ \(4\).png);
     max-width: 100%;
 
   padding: 20px;
 }
+
