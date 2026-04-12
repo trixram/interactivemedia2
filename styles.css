@@ -167,7 +167,7 @@ h3 {
 }
 
 .left-side .bread {
-    top: -50px;
+    top: -44px;
     left: 90px;
     transform: rotate(-35deg);
 }
@@ -243,13 +243,15 @@ h3 {
     left: -8px;
 }
 
-.left-side .letters {
+.letters {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
 }
 
 .letters img {
+    position: relative;
         max-width: 100%;
     width: 145px;
 }
@@ -506,7 +508,7 @@ h3 {
 }
 
 .red-four {
-       border: 5px #c66c6c dashed;
+       border: 5px #b86565 dashed;
 }
 
 .orange, .orange-three {
@@ -582,9 +584,33 @@ background-color:#FFF0A5 ;
     justify-content: space-around;
 }
 
+.letter-two {
+    width: 100%; 
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.letter-closed:hover .letter-two {
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.hidden-letter {
+    opacity: 0;
+    position: absolute; 
+    max-width: 100%;
+    bottom: -30px;
+    z-index: 1;
+}
+
+.letter-closed:hover .hidden-letter{
+    opacity: 1;
+    transition: 0.1s ease-in-out;
+}
 
 
-.letter-one:hover, .letter-two:hover, .letter-three:hover {
+
+.letter-one:hover, .letter-three:hover {
     animation: shake 0.2s infinite ease-in-out
 }
  
