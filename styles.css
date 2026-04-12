@@ -193,16 +193,26 @@ h3 {
 } */
 
 
-.right-side {
+.right-side, .left-side {
     position: relative;
 }
 
-.right-side .grass {
+.right-side .grass{
     max-width: 100%;
     width: 600px;
     position: absolute;
     bottom: -15px;
     left: 10px;
+    border-radius: 0 0px 8px 8px;
+}
+.left-side .grass {
+    z-index: -1;
+    max-width: 100%;
+    width: 600px;
+    position: absolute;
+    bottom: -33px;
+    left: -9px;
+    border-radius: 0 0px 8px 8px;
 }
 
  .cat {
@@ -214,12 +224,23 @@ h3 {
 }
 
 .right-side .clouds {
+    opacity: 0.7;
     z-index: 0;
         max-width: 100%;
         width: 600px;
     position: absolute;
     top: -15px;
     right: -10px;
+}
+
+.left-side .clouds {
+    z-index: -1;
+       opacity: 0.7;
+        max-width: 100%;
+        width: 600px;
+    position: absolute;
+    top: -34px;
+    left: -8px;
 }
 
 .left-side .letters {
@@ -484,8 +505,16 @@ h3 {
     background-color: #D98282;
 }
 
+.red-four {
+       border: 5px #c66c6c dashed;
+}
+
 .orange, .orange-three {
     background-color: #FFB03A;
+}
+
+.orange-three {
+    border: 5px  #d6922c dashed;
 }
 
 .yellow, .yellow-two {
@@ -493,14 +522,18 @@ background-color:#FFF0A5 ;
 }
 
 .green {
-
  background-color: #A54B29;
+}
+
+.yellow-two {
+     border: 5px #dfd187 dashed;
 }
 
 
 .green-one {
     transform:rotate(-5deg);
     background-color: #A54B29;
+     border: 5px #8e3f22 dashed;
 }
 
 
