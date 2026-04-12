@@ -552,7 +552,7 @@ background-color:#FFF0A5 ;
 
 
 
-.letter-one:hover, .letter-two:hover .letter-three:hover {
+.letter-one:hover, .letter-two:hover, .letter-three:hover {
     animation: shake 0.2s infinite ease-in-out
 }
  
