@@ -134,8 +134,7 @@ main {
     align-items: flex-start;
     /* gap: 30px;  */
 }
-
-.left-side h2 {
+.left-side h2, .right-side h2{
     text-align: center;
     color: #877965;
      font-family: "Chiron GoRound TC", sans-serif;
@@ -144,6 +143,7 @@ main {
   background-color: #E9DCC9;
   padding: 20px;
   border: #dacbb6 5px solid ;
+  margin: 10px 0;
   border-radius: 5px;
   /* margin: 20px auto; */
 }
@@ -175,6 +175,8 @@ main {
 .left-side .grass {
     max-width: 100%;
     width: 600px;
+    z-index: 
+    -1;
     position: absolute;
     bottom: -25px;
     left: -1px;
@@ -277,53 +279,6 @@ color: #8e2c2c;
     color: rgb(158, 52, 52);
 }
 
-.writing-research {
-        overflow-y: scroll;
-        border: #eedec8 5px solid ;
-           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    padding:10px;
-    height:600px;
-    text-align: center;
-    line-height: 2em;
-    border-radius: 20px;
-    background-color: rgb(255, 237, 220);
-    color: rgb(158, 52, 52);
-}
-
-.writing h2, .writing-research h2{
-    font-family: "Chiron GoRound TC", sans-serif;
-  font-weight:900;
-  font-size: 40px;
-  line-height: 1.2em;
-  color: rgb(162, 65, 65);
-  animation: pop 0.75s ease-in-out; 
-}
-
-
-.writing-research h3 {
-     font-family: "Chiron GoRound TC", sans-serif;
-  font-weight:900;
-  font-size: 20px;
-  line-height: 1.2em;
-  color: rgb(162, 65, 65);
-}
-
-
-.writing-research a {
-     font-size: 15px;
-    font-weight: 400;
-    text-align: left;
-    margin: 15px;
-    font-family: "Mali";
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    border-radius: 15px;
-    border: 4px rgb(243, 168, 168) solid;
-    background-color: rgb(250, 199, 199);
-color: rgb(158, 52, 52);
-}
-
 .right-side a:hover {
     color: rgb(255, 223, 223);
      border: 4px rgb(195, 125, 125) solid;
@@ -344,32 +299,6 @@ color: rgb(158, 52, 52);
     }
 }
 
-
-.writing p, .writing-research p {
-    font-size: 18px;
-    margin: 20px;
-    font-weight: 400;
-    text-align: justify;
-    font-family: "Mali";
-}
-
-.signature {
-    position: relative;
-    top: -40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: self-end;
-}
-.signature img {
-    max-width: 100%;
-    width: 105px;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-
-
-}
 
  .cat {
     max-width: 100%;
@@ -504,103 +433,10 @@ background-color:#FFF0A5 ;
 }
 
 
-.broom {
-    position: absolute; 
-    max-width: 100%;
-    width:95px;
-    bottom: -30px;
-    transform: rotate(90deg);
-   left: 150px;
-   animation: move 2s ease-in-out infinite;
-}
-
-
-@keyframes move {
-    0% {
-         transform: translateX(0) rotate(-90deg);
-       
-    }
-
-    25% {
-        transform:translateX(8px) rotate(-91deg);
-    }
-
-    50% {
-        transform: translateX(-0px) rotate(-90deg);
-    }
-
-    75% {
-        transform: translateX(-8px) rotate(-89deg);
-    }
-
-    100% {
-        transform: translateX(0px) rotate(-91deg);  
-    }
-}
-
-.bow {
-    position: absolute;
-    max-width: 100%;
-     width: 150px;
-     left: -15px;
-     top: -10px;
-     z-index: 2;
-     transform: rotate(-35deg);
-}
 
 
 
 
-
-
-@keyframes loop {
-
-
-    0% {
-        transform: translateX(0) rotate(-2deg);
-      
-    }
-    10% {
-        transform: translateX(0) rotate(2deg);
-    }
-    20% {
-        transform: translateX(0) rotate(-2deg);
-    }
-
-
-    30% {
-        transform: translateX(20vw) rotate(75deg);
-    }
-
-
-    55% {
-        transform: translateX(90vw) rotate(60deg);
-        opacity: 1;
-    }
-
-
-    65% {
-        transform: translateX(110vw) rotate(50deg);
-        opacity: 0;
-    }
-
-  
-    66% {
-        transform: translateX(-200px);
-        opacity: 0;
-    }
-
-
-    80% {
-        transform: translateX(-200px) rotate(-3deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0) rotate(3deg);
-        opacity: 1;
-    }
-}
 
 footer {
     background: url(images/footer\ \(4\).png);
@@ -640,7 +476,7 @@ footer p {
 
 .right-side .design-comp {
     max-width: 100%;
-    width: 420px;
+    width: 545px;
     border-radius: 10px;
    
      border: 5px rgb(193, 181, 146) solid;
