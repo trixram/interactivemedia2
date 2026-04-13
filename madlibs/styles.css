@@ -148,7 +148,7 @@ main {
   /* margin: 20px auto; */
 }
 
-.left-side h2:hover {
+.left-side h2:hover, .right-side h2:hover {
     animation: shake 0.3s ease-in-out;
 }
 
