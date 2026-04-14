@@ -156,7 +156,7 @@ main {
     width: 555px;
     max-width: 100%;
    border-radius: 10px;
-     border: 5px rgb(193, 181, 146) solid;
+      border: #dacbb6 5px solid ;
 }
 .left-side .madlibs:hover {
   animation: shake 0.5s ease-in-out;
