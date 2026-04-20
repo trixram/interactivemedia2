@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <script>
+
+        
+        /* In this program, your job is to guess which number is the right number */
+
+        // Sequence
+        var myText = prompt(`Hello there! Let's play! Guess the number I'm thinking between 1-10 :)`) 
+
+ /*        three loops to declare a specific number */
+
+    // Selection
+        var food = ["fried chicken", "fries", "sesame balls"];
+
+        var randomFood = food[Math.floor (Math.random() * food.length)];
+    // Loop    
+        if(myText == 9){  
+            document.body.innerHTML = `Congrats! You won the game! Treat yourself to ${randomFood}!`;
+            document.body.style.background = "#90EE90";
+            document.body.style.color = "green";
+        }
+
+        else {
+            document.body.innerHTML = "Sorry! You lost, try again!";
+
+            document.body.style.background = "red";
+            document.body.style.color = "#fbd9d3";
+        };
+
+       
+
+    </script>
+    
+</body>
+</html>
