@@ -730,3 +730,45 @@ footer p {
 
 
 
+@media screen and (max-width: 700px) {
+    main {
+        margin: 160px 10px 10px;
+    }
+    .paper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+
+
+    .sticky-notes {
+        right: 2px; 
+    }
+
+    .letters {
+        display: none;
+    }
+
+    .broom {
+        display: none;
+    }
+    .left-side .grass {
+        display: none;
+    }
+
+
+    .line {
+        display: none;
+    }
+    .right-side .links > ul  {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .footer-connect {
+        display: flex;
+        flex-direction: row;
+    }
+}
