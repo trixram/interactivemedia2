@@ -512,3 +512,232 @@ z-index: -1;
 }
 
 
+
+/* ------MadLibs V1-------- */
+
+header {
+    display: none;
+}
+.madlibs-body {
+    background: url(images/intro.png);
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    overflow-y: hidden;
+
+}
+
+.madlibs-main {
+    padding: 20px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    /* width: 1200px;
+    height: 625px; */
+    padding: 20px;
+    width: auto;
+    border-radius: 0;
+    margin: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+
+.madlibs-main .intro {
+    display: flex;
+    padding: 100px;
+    border-radius: 10px;
+    /* background-color: rgb(250, 207, 233); */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.madlibs-main .ship {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(115deg);
+    top: -80px;
+    right: 350px;
+    animation: fly 3s linear infinite;
+    z-index: -1;
+}
+
+
+.madlibs-main .purple-ship {
+    max-width: 100px;
+}
+
+.ship  .fire {
+    max-width: 100px;
+    transform: rotate(-90deg);
+    position: relative;
+    top: -30px;
+    z-index: -2;
+    animation: burn 2s ease-in infinite;
+
+   
+}
+
+@keyframes fly {
+0% {
+    transform: translate(0px, 0px) rotate(115deg);
+  }
+
+  25% {
+    transform: translate(90px, 40px) rotate(122deg);
+  }
+
+  50% {
+    transform: translate(180px, 85px) rotate(130deg);
+  }
+
+  75% {
+    transform: translate(250px, 140px) rotate(150deg);
+  }
+
+  100% {
+    transform: translate(320px, 250px) rotate(185deg);
+  }
+}
+
+@keyframes burn {
+    0%{
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity:0.2;
+    }
+    
+}
+
+ .purple-planet {
+    bottom: -200px;
+    position: absolute;
+    max-width: 100%;
+    right: -130px;
+    width: 500px;
+  animation: opposite-float 3s ease infinite;
+    
+}
+
+
+.saturn-planet{
+    z-index: -1;
+    top: -155px;
+    left: -230px;
+    position: absolute;
+    rotate: calc(15deg);
+    width: 650px;
+    animation: float 5s ease infinite;
+}
+
+@keyframes float {
+     0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+    
+}
+
+
+@keyframes opposite-float {
+     0%   { transform: translateY(0px); }
+  50%  { transform: translateY(10px); }
+  100% { transform: translateY(0px); }
+    
+}
+
+ .squiggly-planet  {
+  position: absolute;
+    bottom: -150px;
+    left: -150px;
+    max-width: 100%;
+    width: 350px;
+    animation: rotation 40s linear infinite;
+
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes opposite-rotation {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+    
+}
+
+.comics {
+    max-width: 400px;
+    position: absolute;
+    bottom: -35px;
+    left: 85px;
+    rotate: calc(-20deg);
+}
+
+.madlibs-main .intro h1 {
+    font-size: 80px;
+      font-family: "Bitcount Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+.madlibs-main a {
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    padding: 25px;
+    border: 4px solid rgb(178, 85, 178);
+    text-decoration: none;
+    background-color: rgb(250, 207, 233); }
+
+
+
+.madlibs-main a:hover {
+    transform: scale(1.1);
+    background-color: rgb(238, 143, 238);
+    border: 4px solid rgb(190, 108, 190)
+}
+
+.madlibs-footer {
+height: 20px;
+    background-color: rgb(228, 195, 228);
+    background-image: none;
+
+}
