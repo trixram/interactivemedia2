@@ -647,7 +647,7 @@ animation: float 2s ease-in infinite;
         0 0 20px rgba(240, 120, 198, 0.6),
         0 0 40px rgba(246, 116, 200, 0.4),
         0 0 80px rgba(250, 121, 205, 0.2);
-    background-color: rgb(156, 85, 156);
+    background-color: rgb(151, 78, 151);
   
 }
 
@@ -671,9 +671,8 @@ fieldset input, fieldset label {
     display: inline;
 }
 #submit-button {
-    display: flex;
-    align-items: right;
-    justify-content: right;
+    display: block;
+    margin-left: auto;
     width: 200px;
     padding: 15px;
  color: rgb(126, 67, 126);
@@ -695,7 +694,7 @@ fieldset input, fieldset label {
     max-height: 500px;
     overflow-y: scroll;
          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
- background-color: rgb(255, 218, 240);
+ background-color: rgb(253, 231, 244);
  font-size: 17px; 
  padding: 50px;
 
