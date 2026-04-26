@@ -522,12 +522,20 @@ header {
     background: url(images/intro.png);
     margin: auto;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     overflow-y: hidden;
 
 }
 
-.madlibs-main {
+.madlibs-play-body {
+      background: url(images/madlibs-background.png);
+    margin: auto;
+    background-position: center;
+    background-size:cover;
+    overflow-y: hidden;
+}
+
+.madlibs-main, .madlibs-play {
     padding: 20px;
     
     position: relative;
@@ -546,11 +554,171 @@ header {
     box-shadow: none;
 }
 
+
+.madlibs-play {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    /* flex-direction: row; */
+    /* width: 1200px;
+    height: 625px; */
+    padding: 20px;
+    width: auto;
+    border-radius: 0;
+    margin: 15px 50px;
+    box-shadow: none;
+}
+
+
+.madlibs-play .left {
+
+    z-index: -1;
+
+}
+
+.madlibs-play .left .saturn {
+max-width: 100%;
+width: 200px;
+position: absolute;
+left: 0;
+top: 0;
+rotate: calc(-20deg);
+animation: float 2s ease-in infinite;
+}
+
+
+.purple-ship-play {
+    position: absolute;
+    max-width: 100%;
+    width: 150px;
+    left: 165px;
+    z-index: 1;
+    bottom: 170px;
+}
+
+
+
+
+.madlibs-play .moon {
+    position: absolute;
+    max-width: 100%;
+   width: 650px;
+   left: -90px;
+   bottom: -400px;
+   animation: rotation 100s linear infinite;
+}
+.madlibs-play .pink-planet {
+    max-width: 100%;
+    width:200px;
+    top:10px;
+    left: 250px;
+    position: absolute;
+    animation: float 3s ease infinite;
+}
+.madlibs-play .right-enter {
+    max-height: 600px;
+     border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    width: 65%;
+    right: -20px;
+   box-shadow: 
+        0 0 20px rgba(240, 120, 198, 0.6),
+        0 0 40px rgba(246, 116, 200, 0.4),
+        0 0 80px rgba(250, 121, 205, 0.2);
+    background-color: rgb(156, 85, 156);
+  
+}
+
+
+.alert {
+    font-size: 25px;
+}
+
+label, input {
+    display: inline-block;
+}
+
+input {
+    background-color: rgb(255, 213, 255);
+    margin-bottom: 20px;
+    font-weight: 500;
+    color:rgb(62, 2, 62);
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+#submit-button {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 200px;
+    padding: 15px;
+ color: rgb(126, 67, 126);
+ border: 3px solid rgb(178, 85, 178);
+    font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+   background-color: rgb(255, 220, 255); 
+  font-weight: 800;
+    border-radius: 10px;
+}
+
+#submit-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(238, 159, 238);
+    border: 4px solid rgb(188, 96, 188);
+    color: rgb(113, 64, 113);
+}
+.right-enter .story {
+    max-height: 500px;
+    overflow-y: scroll;
+         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+ background-color: rgb(255, 218, 240);
+ font-size: 17px; 
+ padding: 50px;
+
+ text-align: left;
+   line-height: 2.5em;
+   border-radius: 15px;
+    color: rgb(57, 18, 57);
+    font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.right-enter .story h2 {
+    text-align: center;
+    font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: rgb(87, 18, 87);
+}
+.madlibs-play .purple {
+    position: absolute;
+    max-width: 100%;
+    width: 500px;
+    right: -100px;
+      animation: float 4s ease infinite;
+}
+
+
+.madlibs-play .captain {
+    position: absolute;
+    max-width: 100%;
+   width: 80px;
+   left: 0;
+   bottom: 50px
+}
+
 .madlibs-main .intro {
     display: flex;
-    padding: 100px;
-    border-radius: 10px;
-    /* background-color: rgb(250, 207, 233); */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -581,7 +749,7 @@ header {
     position: relative;
     top: -30px;
     z-index: -2;
-    animation: burn 2s ease-in infinite;
+    animation: burn 5s ease-in infinite;
 
    
 }
@@ -589,22 +757,30 @@ header {
 @keyframes fly {
 0% {
     transform: translate(0px, 0px) rotate(115deg);
+    opacity: 0;
   }
 
   25% {
     transform: translate(90px, 40px) rotate(122deg);
+    opacity: 0.8;
   }
 
   50% {
     transform: translate(180px, 85px) rotate(130deg);
+    opacity: 1;
   }
 
   75% {
     transform: translate(250px, 140px) rotate(150deg);
+    opacity: 1;
   }
 
+  90% {
+    opacity: 0.5;
+  }
   100% {
     transform: translate(320px, 250px) rotate(185deg);
+    opacity: 0;
   }
 }
 
@@ -627,7 +803,7 @@ header {
     bottom: -200px;
     position: absolute;
     max-width: 100%;
-    right: -130px;
+    right: -150px;
     width: 500px;
   animation: opposite-float 3s ease infinite;
     
@@ -636,11 +812,11 @@ header {
 
 .saturn-planet{
     z-index: -1;
-    top: -155px;
-    left: -230px;
+    top: -200px;
+    left: -200px;
     position: absolute;
-    rotate: calc(15deg);
-    width: 650px;
+    rotate: calc(25deg);
+    width: 620px;
     animation: float 5s ease infinite;
 }
 
@@ -691,48 +867,101 @@ header {
     
 }
 
-.comics {
+.comets {
     max-width: 400px;
     position: absolute;
     bottom: -35px;
     left: 85px;
-    rotate: calc(-20deg);
+    rotate: calc(-10deg);
+    animation: shooting 5s ease-in infinite;
+}
+
+@keyframes shooting {
+   0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+        opacity: 0;
+    }
+
+    10% {
+         opacity: 1;
+    }
+    30% {
+        transform: translate(300px, 150px) rotate(5deg) scale(1.1);
+    }
+
+    60% {
+        transform: translate(600px, 300px) rotate(10deg) scale(1.2);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translate(680px, 450px) rotate(20deg) scale(1.1);
+        opacity: 0.8;
+    }
+
+    90% {
+        transform: translate(750px, 580px) rotate(28deg) scale(0.95);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(800px, 650px) rotate(35deg) scale(0.8);
+        opacity: 0;
+    }
 }
 
 .madlibs-main .intro h1 {
-    font-size: 80px;
-      font-family: "Bitcount Ink", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 500px;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0,
-    "SZP1" 0,
-    "SZP2" 0,
-    "XPN1" 0,
-    "XPN2" 0,
-    "YPN1" 0,
-    "YPN2" 0;
+
+    /* fix the font- change it to something else */
+    font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-size: 75px;
+  animation: pop 1s ease-in-out;
+  color: rgb(57, 13, 36);
+
 }
+
+@keyframes pop {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(30px);
+        filter: blur(6px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+    }
+}
+    
+
+
 .madlibs-main a {
+    color: rgb(126, 67, 126);
+    font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
     text-align: center;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 25px;
     display: block;
     width: 300px;
     padding: 25px;
     border: 4px solid rgb(178, 85, 178);
     text-decoration: none;
-    background-color: rgb(250, 207, 233); }
+    background-color: rgb(250, 207, 233); 
+   animation: pop 1s ease-in-out;
+}
 
 
 
 .madlibs-main a:hover {
-    transform: scale(1.1);
+    transform: rotate(2deg) scale(1.1);
+    transition: 0.3s ease;
     background-color: rgb(238, 143, 238);
-    border: 4px solid rgb(190, 108, 190)
+    border: 4px solid rgb(188, 94, 188);
+    color: rgb(113, 64, 113);
 }
 
 .madlibs-footer {
