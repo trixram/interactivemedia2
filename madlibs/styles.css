@@ -609,7 +609,7 @@ animation: float 2s ease-in infinite;
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-50px);
+        transform: translateY(-100px);
     }
     100% {
         transform: translateY(0px);
@@ -630,9 +630,9 @@ animation: float 2s ease-in infinite;
 }
 .madlibs-play .pink-planet {
     max-width: 100%;
-    width:240px;
-    top:10px;
-    left: 210px;
+    width:230px;
+    top:40px;
+    left: 190px;
     position: absolute;
     animation: float 3s ease infinite;
 }
@@ -730,35 +730,32 @@ fieldset input, fieldset label {
     position: absolute;
     max-width: 100%;
    width: 80px;
-   left: 20px;
+   left: 50px;
    bottom: 50px;
-   animation: cat 5s linear infinite;
+   animation: cat 6s linear infinite;
 }
 
 @keyframes cat {
-    0% {
-        transform: translateY(-200px) rotate(-5deg);
-    }
+   0% {
+    transform: translateY(-100px) rotate(-5deg);
+  }
 
-    /* floating drift */
-    25% {
-        transform: translateY(-220px) rotate(3deg);
-    }
+  25% {
+    transform: translateY(-250px) rotate(3deg);
+  }
 
-    50% {
-        transform: translateY(-210px) rotate(-2deg);
-    }
+  50% {
+    transform: translateY(-210px) rotate(-2deg);
+  }
 
-    /* start descending */
-    75% {
-        transform: translateY(-80px) rotate(1deg);
-    }
+  75% {
+    transform: translateY(-250px) rotate(2deg);
+  }
 
-    /* touchdown */
-    100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    
+  100% {
+    transform: translateY(-100px) rotate(-5deg); /* same as 0% */
+}
+
 }
 
 .madlibs-main .intro {
