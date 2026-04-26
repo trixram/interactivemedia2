@@ -600,6 +600,23 @@ animation: float 2s ease-in infinite;
     bottom: 170px;
 }
 
+.purple-ship-play:hover {
+    animation: shake 1s ease-in-out;
+}
+
+@keyframes shake {
+      0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+  
+
 
 
 
@@ -609,13 +626,13 @@ animation: float 2s ease-in infinite;
    width: 650px;
    left: -90px;
    bottom: -400px;
-   animation: rotation 100s linear infinite;
+   animation: rotation 50s linear infinite;
 }
 .madlibs-play .pink-planet {
     max-width: 100%;
-    width:200px;
+    width:240px;
     top:10px;
-    left: 250px;
+    left: 210px;
     position: absolute;
     animation: float 3s ease infinite;
 }
@@ -705,7 +722,7 @@ fieldset input, fieldset label {
     max-width: 100%;
     width: 500px;
     right: -100px;
-      animation: float 4s ease infinite;
+      animation: float 2.5s ease infinite;
 }
 
 
@@ -713,8 +730,35 @@ fieldset input, fieldset label {
     position: absolute;
     max-width: 100%;
    width: 80px;
-   left: 0;
-   bottom: 50px
+   left: 20px;
+   bottom: 50px;
+   animation: cat 5s linear infinite;
+}
+
+@keyframes cat {
+    0% {
+        transform: translateY(-200px) rotate(-5deg);
+    }
+
+    /* floating drift */
+    25% {
+        transform: translateY(-220px) rotate(3deg);
+    }
+
+    50% {
+        transform: translateY(-210px) rotate(-2deg);
+    }
+
+    /* start descending */
+    75% {
+        transform: translateY(-80px) rotate(1deg);
+    }
+
+    /* touchdown */
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    
 }
 
 .madlibs-main .intro {
