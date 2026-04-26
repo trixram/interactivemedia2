@@ -601,10 +601,10 @@ animation: float 2s ease-in infinite;
 }
 
 .purple-ship-play:hover {
-    animation: shake 1s ease-in-out;
+    animation: hop 1s ease-in-out;
 }
 
-@keyframes shake {
+@keyframes hop {
       0% {
         transform: translateY(0px);
     }
