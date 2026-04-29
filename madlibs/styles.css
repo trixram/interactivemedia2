@@ -660,12 +660,7 @@ label, input {
     display: inline-block;
 }
 
-input {
-    background-color: rgb(255, 213, 255);
-    margin-bottom: 20px;
-    font-weight: 500;
-    color:rgb(62, 2, 62);
-}
+
 
 fieldset input, fieldset label {
     display: inline;
@@ -781,6 +776,9 @@ fieldset input, fieldset label {
     animation: fly 3s linear infinite;
     z-index: -1;
 }
+
+
+
 
 
 .madlibs-main .purple-ship {
@@ -1016,4 +1014,14 @@ height: 20px;
     background-color: rgb(228, 195, 228);
     background-image: none;
 
+}
+
+
+
+
+#adj, #adverb2, #adverb3, #noun1, #noun2, #noun3, #planet1, #planet2, #planet3, #food {
+     background-color: rgb(255, 213, 255);
+    margin-bottom: 20px;
+    font-weight: 500;
+    color:rgb(62, 2, 62);
 }

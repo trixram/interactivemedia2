@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Tiny5&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="styles.css">
+   <script src="script.js" defer></script>
 </head>
 
 <body class="madlibs-play-body">
@@ -25,7 +26,7 @@
             <img class="saturn" src="images/saturn.png" alt="Drawing of Saturn">
             <img class="purple" src="images/purple-planet.png" alt="drawing of a purple planet">
                 <img class="purple-ship-play" src="images/ship.png" alt="Drawing of a spaceship">
-            <img class="moon" src="images/moon (1).png" alt="Drawing of a moon">
+            <img class="moon" src="images/moon.png" alt="Drawing of a moon">
             <img class="captain" src="images/captain.png" alt="Drawing of an astronaut cat">
             <img class="pink-planet" src="images/pink-planet.png" alt="Drawing of a pink planet">
         </section>
@@ -36,75 +37,76 @@
                 <img src="images/Game-Title.png" alt="Logo of the game title"> 
                 <h2>THE GREAT KITTY RESCUE</h2>
 
-                <form class="madLibs">
-                <label for="adverb">Captain Whiskers is a</label>
+                <form id="madLibs">
+                    <label for="adj">Captain Whiskers is a</label>
 
-                <select name="adverb1" id="adverb1"> 
-                    <option value="sassy">sassy</option>
-                    <option value="fluffy">fluffy</option>
-                    <option value="tiny">tiny</option>
-                </select>
+                    <select name="adj" id="adj" required> 
+                        <option value="sassy">sassy</option>
+                        <option value="fluffy">fluffy</option>
+                        <option value="tiny">tiny</option>
+                    </select>
 
-                <span>space kitty flying a</span>
-                <input type="text" name="noun1" id="noun1" value="noun"></input>
-                <span>-powered ship through the stars.</span>
-                
-                <span>One day, they got a message from the moon of</span>
-                <input type="text" name="planet1" id="planet1" value="planet name"></input>
-            
-
-                <span>:</span>
-                
-                    <span class="alert"><b>"ALERT: ALL KITTIES ARE TRAPPED"</b></span>
-
-                <br><br>
-                    <label for="adverb2">Without hesitation, Captain Whiskers moved</label>
-
-                <select name="adverb2" id="adverb2"> 
-                    <option value="loudly">loudly</option>
-                    <option value="rapidly">rapidly</option>
-                    <option value="explosively">explosively</option>
-                </select>
-                <span>through asteroid fields and glowing galaxies. As Captain Whiskers zooms through space, he weave through the galaxies swirling neon gas clouds, passing through Saturn and Mars. As Captain Whiskers drives his ship, the ship begins to beep faster signaling how close he is to the lost kitties in</span>
-
-                <input type="text" name="planet2" id="planet2" value="planet name"></input>
-
-                <span>. As captain Whiskers got closer, he saw</span>
-                <input type="text" name="noun2" id="noun2" value="noun"></input>
-
-                <span>creatures surrounding the scared kitties.</span>
-
-                <label for="adverb3">Meowing for help, Captain Whiskers</label>
-
-                <select name="adverb3" id="adverb3"> 
-                    <option value="quietly">quietly</option>
-                    <option value="cautiously">catiously</option>
-                    <option value="quickly">quickly</option>
-                </select>
-
-                
+                    <span>space kitty flying a</span>
+                    <input type="text" name="noun1" id="noun1" placeholder="noun" required>
+                    <span>-powered ship through the stars.</span>
                     
-                <span>sneaks past the guards and uses his</span>
-
-                <input type="text" name="weapon" id="noun3" value="noun"></input>
-
-                <span>to break open the cages one by one.</span>
-                <br><br>
-                <span>The rescued kitties quickly pile into the ship, and rescue every last kitty on</span>
-
-                <input type="text" name="planet" id="type-planet" value="planet name"></input>
-
-
+                    <span>One day, they got a message from the moon of</span>
+                    <input type="text" name="planet1" id="planet1" placeholder="planet name" required>
                 
-                <span>, all saying their hurrahs to Captain Whiskers. Captain Whiskers sets the destination to Catnip Land, a cozy planet filled with soft grass and endless treats where the kitties can finally feel safe again. To safely return to Catnip Land,they powered their ship using</span> 
-                
-                <input type="text" name="food" id="type-food" value="food"></input>
 
-                <span>. And just like that, all the kitties were saved, and Captain Whiskers saved the day! </span>
-                <br><br>
-                <input type="submit" id="submit-button" name="send" value="SUBMIT">
+                    <span>:</span>
+                    
+                        <span class="alert"><b>"ALERT: ALL KITTIES ARE TRAPPED"</b></span>
+
+                    <br><br>
+                        <label for="adverb2">Without hesitation, Captain Whiskers moved</label>
+
+                    <select name="adverb2" id="adverb2" required> 
+                        <option value="loudly">loudly</option>
+                        <option value="rapidly">rapidly</option>
+                        <option value="explosively">explosively</option>
+                    </select>
+                    <span>through asteroid fields and glowing galaxies. As Captain Whiskers zooms through space, he weave through the galaxies swirling neon gas clouds, passing through Saturn and Mars. As Captain Whiskers drives his ship, the ship begins to beep faster signaling how close he is to the lost kitties in</span>
+
+                    <input type="text" name="planet2" id="planet2" placeholder="planet name" required>
+
+                    <span>. As captain Whiskers got closer, he saw</span>
+                    <input type="text" name="noun2" id="noun2" placeholder="noun" required>
+
+                    <span>creatures surrounding the scared kitties.</span>
+
+                    <label for="adverb3">Meowing for help, Captain Whiskers</label>
+
+                    <select name="adverb3" id="adverb3" required> 
+                        <option value="quietly">quietly</option>
+                        <option value="cautiously">catiously</option>
+                        <option value="quickly">quickly</option>
+                    </select>
+
+                    
+                        
+                    <span>sneaks past the guards and uses his</span>
+
+                    <input type="text" name="weapon" id="noun3" placeholder="noun" required>
+
+                    <span>to break open the cages one by one.</span>
+                    <br><br>
+                    <span>The rescued kitties quickly pile into the ship, and rescue every last kitty on</span>
+
+                    <input type="text" name="planet3" id="planet3" placeholder="planet name" required>
+
+
+                    
+                    <span>, all saying their hurrahs to Captain Whiskers. Captain Whiskers sets the destination to Catnip Land, a cozy planet filled with soft grass and endless treats where the kitties can finally feel safe again. To safely return to Catnip Land,they powered their ship using</span> 
+                    
+                    <input type="text" name="food" id="food" placeholder="food" required>
+
+                    <span>. And just like that, all the kitties were saved, and Captain Whiskers saved the day! </span>
+                    <br><br>
+                    <input type="submit" id="submit-button" name="send" value="SUBMIT">
 
                 </form>
+                
                  <!-- <footer class="madlibs-footer">
           <p>Made by Trixibelle Ramirez</p>
 
@@ -118,8 +120,7 @@
             
            </section>
 
-
-
     </main>
+    <article id="results"></article>
 </body>
 </html>
