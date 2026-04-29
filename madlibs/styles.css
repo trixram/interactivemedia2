@@ -117,7 +117,7 @@ main {
      list-style-type: none;
      padding: 30px;
      width: 200px;
-     border-radius: 8px 8px px 0;
+     border-radius: 8px 8px 0px 0px;
 }
 
 .home a:hover {
@@ -648,7 +648,7 @@ animation: float 2s ease-in infinite;
         0 0 40px rgba(246, 116, 200, 0.4),
         0 0 80px rgba(250, 121, 205, 0.2);
     background-color: rgb(151, 78, 151);
-  
+    width: 950px;
 }
 
 
@@ -678,7 +678,7 @@ fieldset input, fieldset label {
  color: rgb(126, 67, 126);
  border: 3px solid rgb(178, 85, 178);
     font-family: "IBM Plex Sans", sans-serif;
-  font-optical-sizing: auto;
+  
    background-color: rgb(255, 220, 255); 
   font-weight: 800;
     border-radius: 10px;
@@ -696,25 +696,29 @@ fieldset input, fieldset label {
          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
  background-color: rgb(253, 231, 244);
  font-size: 17px; 
- padding: 50px;
+ padding: 45px;
+
 
  text-align: left;
    line-height: 2.5em;
    border-radius: 15px;
     color: rgb(57, 18, 57);
     font-family: "IBM Plex Sans", sans-serif;
-  font-optical-sizing: auto;
+ 
   font-weight: 400;
 }
 
 .right-enter .story h2 {
-    text-align: center;
-    font-family: "Tiny5", sans-serif;
-  font-weight: 400;
-    font-size: 50px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    color: rgb(87, 18, 87);
+    display: none;
+}
+
+.right-enter .story img {
+    max-width: 100%;
+    width: 550px;
+    margin: 0px auto 25px auto;
+    display: block;
+    animation: pop 0.5s ease-in-out;
+   
 }
 .madlibs-play .purple {
     position: absolute;
@@ -950,14 +954,17 @@ fieldset input, fieldset label {
     }
 }
 
-.madlibs-main .intro h1 {
+.intro h1 {
+    display: none;
+}
+
+.game-title{
 
     /* fix the font- change it to something else */
-    font-family: "Tiny5", sans-serif;
-  font-weight: 400;
-  font-size: 75px;
+    
   animation: pop 1s ease-in-out;
-  color: rgb(57, 13, 36);
+  max-width: 100%;
+  width: 700px;
 
 }
 
@@ -980,7 +987,7 @@ fieldset input, fieldset label {
 .madlibs-main a {
     color: rgb(126, 67, 126);
     font-family: "IBM Plex Sans", sans-serif;
-  font-optical-sizing: auto;
+
   font-weight: 800;
     text-align: center;
     border-radius: 50px;
