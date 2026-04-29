@@ -536,7 +536,7 @@ header {
 }
 
 .madlibs-main, .madlibs-play {
-    padding: 20px;
+    /* padding: 20px; */
     
     position: relative;
     display: flex;
@@ -548,7 +548,8 @@ header {
     padding: 20px;
     width: auto;
     border-radius: 0;
-    margin: 15px 50px;
+    /* margin: 15px 50px; */
+    margin: 20px;
     justify-content: center;
     align-items: center;
     box-shadow: none;
@@ -556,7 +557,7 @@ header {
 
 
 .madlibs-play {
-    padding: 20px;
+    /* padding: 20px; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -569,7 +570,6 @@ header {
     padding: 20px;
     width: auto;
     border-radius: 0;
-    margin: 15px 50px;
     box-shadow: none;
 }
 
@@ -642,13 +642,15 @@ animation: float 2s ease-in infinite;
     padding: 15px;
     position: absolute;
     width: 65%;
-    right: -20px;
+    margin: 10px;
+    right: 0px;
+    bottom: 0px;
    box-shadow: 
         0 0 20px rgba(240, 120, 198, 0.6),
         0 0 40px rgba(246, 116, 200, 0.4),
         0 0 80px rgba(250, 121, 205, 0.2);
     background-color: rgb(151, 78, 151);
-    width: 950px;
+    /* width: 950px; */
 }
 
 
@@ -691,7 +693,7 @@ fieldset input, fieldset label {
          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
  background-color: rgb(253, 231, 244);
  font-size: 17px; 
- padding: 45px;
+padding: 45px;
 
 
  text-align: left;
@@ -707,7 +709,7 @@ fieldset input, fieldset label {
     display: none;
 }
 
-.right-enter .story img {
+.game-title {
     max-width: 100%;
     width: 550px;
     margin: 0px auto 25px auto;
@@ -1009,11 +1011,41 @@ fieldset input, fieldset label {
     color: rgb(113, 64, 113);
 }
 
-.madlibs-footer {
-height: 20px;
-    background-color: rgb(228, 195, 228);
+.mad-footer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 5px;
+    padding-bottom: 0;
     background-image: none;
+       margin: 0;
+}
 
+.mad-footer a {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 20px; 
+    border: 3px solid rgb(178, 85, 178);
+    font-family: "IBM Plex Sans", sans-serif;
+
+   background-color: rgb(255, 220, 255);
+   animation: pop 1s ease-in-out;
+
+}
+
+.mad-footer a:hover {
+    transform: scale(1.1);
+    background-color: rgb(238, 159, 238);
+    border: 4px solid rgb(188, 96, 188);
+    color: rgb(113, 64, 113);
+}
+.mad-footer img {
+    max-width: 100%;
+    width: 30px;
 }
 
 
