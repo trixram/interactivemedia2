@@ -52,7 +52,7 @@
                     <label>Meowing for help, Captain Whiskers</label>
 
 
-                    <span><b>${adverb3}</b> sneaks past the guards and uses his</span>
+                    <span><b>${adverb3}</b> sneaks past the guards and uses his${noun3}</span>
 
                     <span>to break open the cages one by one.</span>
                     <br><br>
