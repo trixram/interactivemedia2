@@ -24,6 +24,7 @@ body {
     background-repeat: repeat-x;
     height: 113px;
     z-index: 3;
+    display: block;
     /* animation: move 2s infinite ease-in-out; */
 
 }
