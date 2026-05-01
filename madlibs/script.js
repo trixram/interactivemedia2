@@ -30,8 +30,7 @@
 
         <form id="madlibs-options">
         <label for="adj">Captain Whiskers is a <b>${adj}</b></label>
-
-
+        <span>space kitty flying a</span>
                     <span><b>${noun1}</b>-powered ship through the stars.</span>
                     
                     <span>One day, they got a message from the moon of <b>${planet1}</b></span>
