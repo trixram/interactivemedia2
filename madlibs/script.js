@@ -2,7 +2,7 @@
     'use strict'
     console.log('reading js');
 
-    const madLibs = document.querySelector('#madLibs');
+    const madLibs = document.querySelector('#madlibs');
     const results = document.querySelector('#results');
     const story = document.querySelector('.story');
 
@@ -28,7 +28,7 @@
 
         const myText = `
 
-        
+        <form id="madlibs-options">
         <label for="adj">Captain Whiskers is a <b>${adj}</b></label>
 
 
@@ -62,6 +62,8 @@
                     <span>, all saying their hurrahs to Captain Whiskers. Captain Whiskers sets the destination to Catnip Land, a cozy planet filled with soft grass and endless treats where the kitties can finally feel safe again. To safely return to Catnip Land,they powered their ship using <b>${food}</b>.</span> 
 
                     <span> And just like that, all the kitties were saved, and Captain Whiskers saved the day! </span>
+            
+                </form>
                     
                     <footer class="mad-footer">
                     
