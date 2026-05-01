@@ -419,6 +419,7 @@ background-color:#FFF0A5 ;
 
 
 
+
 @keyframes shake {
     0% {
         rotate:calc(-3.5deg);
@@ -574,6 +575,10 @@ header {
     box-shadow: none;
 }
 
+span {
+    font-size: 20px;
+    font-weight: 450;
+}
 
 .madlibs-play .left {
 

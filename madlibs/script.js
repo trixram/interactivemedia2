@@ -28,8 +28,8 @@
 
         const myText = `
 
-        <form id="madlibs-options">
-        <label for="adj">Captain Whiskers is a <b>${adj}</b></label>
+        <form id="madlibs">
+        <span>Captain Whiskers is a <b>${adj}</b></span>
         <span>space kitty flying a</span>
                     <span><b>${noun1}</b>-powered ship through the stars.</span>
                     
@@ -40,7 +40,7 @@
                         <span class="alert"><b>"ALERT: ALL KITTIES ARE TRAPPED"</b></span>
 
                     <br><br>
-                        <label>Without hesitation, Captain Whiskers moved <b>${adverb2}</b></label>
+                        <span>Without hesitation, Captain Whiskers moved <b>${adverb2}</b></span>
 
                   
                     <span>through asteroid fields and glowing galaxies. As Captain Whiskers zooms through space, he weave through the galaxies swirling neon gas clouds, passing through Saturn and Mars. As Captain Whiskers drives his ship, the ship begins to beep faster signaling how close he is to the lost kitties in <b>${planet2}</b>.</span>
