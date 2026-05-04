@@ -49,7 +49,7 @@
 
                     <span>creatures surrounding the scared kitties.</span>
 
-                    <label>Meowing for help, Captain Whiskers</label>
+                    <span>Meowing for help, Captain Whiskers</span>
 
 
                     <span><b>${adverb3}</b> sneaks past the guards and uses his${noun3}</span>

@@ -748,7 +748,7 @@ fieldset input, fieldset label {
  background-color: rgb(253, 231, 244);
  font-size: 17px; 
 padding: 45px;
-
+scroll-behavior: smooth;
 
  text-align: left;
    line-height: 2.5em;
@@ -757,6 +757,22 @@ padding: 45px;
     font-family: "IBM Plex Sans", sans-serif;
  
   font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: rgb(234, 172, 234);
+    margin-left: 0;
+    box-shadow: 0 4px 4px 0 rgba(116, 54, 82, 0.3);
+   
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(192, 85, 192);
+  border-radius: 100px;
+  scroll-behavior: smooth;
+   box-shadow: 0 4px 4px 0 rgba(116, 54, 82, 0.3);
+
 }
 
 .right-enter .story h2 {
