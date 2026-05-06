@@ -29,6 +29,8 @@
         const myText = `
 
         <form id="madlibs">
+        <img class="game-title" src="images/game-title-mad.png" alt="Logo of the game title"> 
+    <h2>THE GREAT KITTY RESCUE</h2>
         <span>Captain Whiskers is a <b>${adj}</b></span>
         <span>space kitty flying a</span>
                     <span><b>${noun1}</b>-powered ship through the stars.</span>
