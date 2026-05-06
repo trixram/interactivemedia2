@@ -210,7 +210,7 @@ color: #8e2c2c;
     text-align: center;
     display: block;
     line-height: 1.5em;
-        padding: 20px;
+        padding: 10px;
         width: 300px;
         border-radius: 10px;
         background-color: #d5724d;
@@ -469,6 +469,19 @@ background-color:#FFF0A5 ;
     padding: 1px;
     background-color: #E9DCCA;
 
+}
+.writing-research .analysis-image {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 10px;
+    border: rgb(232, 130, 130) 4px solid ;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.writing-research figcaption {
+font-family: "Chiron GoRound TC", sans-serif;
+  font-weight:900;
+  font-size: 15px;
 }
 
 .paper {
