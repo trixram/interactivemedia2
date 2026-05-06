@@ -673,7 +673,7 @@ label, input {
 
 
 
-.form-fields #submit-button {
+ #submit-button {
       display: block;
       text-align: center;
       height: 90px;
@@ -697,8 +697,29 @@ margin: 20px auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+
+.form-fields {
+     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* space between left/right */
+    width: 100%;
+}
+
+.form-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; /* consistent width */
+    margin-bottom: 20px;;
+}
+
+.form-labels input {
+    width: 100%;
+}
+
 
 .split-left .form-fields, .split-right .form-fields {
       display: flex; 
@@ -720,7 +741,7 @@ margin: 20px auto;
 }
 
 
-.form-fields #submit-button:hover  {
+#submit-button:hover  {
         transform: scale(1.1);
     background-color: rgb(238, 159, 238);
     border: 4px solid rgb(188, 96, 188);
@@ -761,7 +782,9 @@ fieldset input, fieldset label {
  font-size: 17px; 
 padding: 45px;
 scroll-behavior: smooth;
-
+display: flex; 
+flex-direction: column;
+align-items: center;
  text-align: left;
    line-height: 2.5em;
    border-radius: 15px;
@@ -793,7 +816,7 @@ scroll-behavior: smooth;
 
 .game-title {
     max-width: 100%;
-    width: 550px;
+    width: 600px;
     margin: 0px auto 25px auto;
     display: block;
     animation: pop 0.5s ease-in-out;
@@ -1046,8 +1069,6 @@ scroll-behavior: smooth;
     
   animation: pop 1s ease-in-out;
   max-width: 100%;
-  width: 700px;
-
 }
 
 @keyframes pop {
