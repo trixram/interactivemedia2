@@ -1,0 +1,60 @@
+/* picture main menu */
+.picture-body {
+    background-image: url(images/main-background.png);
+   max-height: 750px;
+    max-width: 1200px;
+    margin: auto;  
+       overflow-y: hidden;  
+}
+
+.picture-main {
+    position: relative;
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-nav a {
+    display:inline-block block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.picture-nav .home {
+    position: absolute;
+    left: -100px;
+    bottom: 150px;
+}
+
+.picture-nav .next {
+     position: absolute;
+    right: -100px;
+    bottom: 150px;
+}
+
+.thought-bubbles {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.thought-one, .thought-two {
+    position: absolute;
+    margin: 10px;
+    width: 300px;
+    line-height: 2em;
+    padding: 20px;
+}
+
+.thought-one {
+    left: 20px;
+    bottom: 50%;
+}
+
+.thought-two {
+    right: 20px;
+    bottom: 50%;
+}
