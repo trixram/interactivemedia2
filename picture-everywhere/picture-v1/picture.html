@@ -5,51 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Every Picture</title>
     <link rel="stylesheet" href="styles.css">
-    <link src="script.js" defer>
+
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="picture.js" defer></script>
 </head>
 <body  class="picture-body">
     <main class="picture-main">
         <!-- animation: pops up or something similar to scrapbook  -->
-        <h1 class="picture-title">A Sweets Journey</h1>
-        <h2 class="picture-subtitle">Let's guess where I'm going!</h2>
+        <h1>A Sweets Journey</h1>
+        <img class="picture-title" src="images/sweet-title.png" alt="Sweets Journey title">
+
+         <section class="note">
+            <div class="post-it">
+                <h3>hover all the photos!</h3>
+            </div>
+        </section>
+
         <!-- main images -->
 
         <!-- hover effect to see comments -->
         <!-- aniamtion: when head pops up, the boba and pancake will load ease in and out -->
         <section class="thought-bubbles">
             <div class="thought-one">
-                <img src="" alt="photo of boba">
-                <div>
-                    <p>Pros: Refreshing, Right amount of sweetness, and Variety of drink options</p>
-                    <p>Cons: Expensive, Might not like the taste, and Can be too cold</p>
+                <img class="boba" src="images/boba-drink.png" alt="photo of boba">
+                <div class="option1">
+                    <p>i really love how refreshing the drink is, and with fun toppings...but it's kind of expensive and sometimes gets boring to drink.</p>
                 </div>
+                  <img class="left" src="images/thinking-cloud-left.png" alt="image of a cloud">
             </div>
             
             <div class="thought-two">
-                <img src="" alt="photo of pancakes">
-                <div>
-                    <p>Pros: Comoforting, Satistfies my cravings, Fun varieties</p>
-                    <p>Cons: Too sweet, Might be too heavy, Too expensive</p>
+                <img class="pancakes" src="images/pancakes.png" alt="photo of pancakes">
+                <div class="option2">
+
+                    <p>pancakes are so comforting and always satisfies my cravings! but it's too sweet, with a price of the size of a whale >.<</p>
                 </div>
+                <img class="right" src="images/thinking-cloud.png" alt="image of a cloud">
             </div>
         </section>
 
         <!-- animation: add a pop up when it loads -->
+       
         <img class="my-head" src="images/MyHead.png" alt="image of Trixibele">
+    
         
         <!-- decoration images -->
         <!-- animation: sway -->
          <div class="decorations">
-            <img src="" alt="photo of buttons">
-            <img src="" alt="photo of buttons">
-            <img src="" alt="photo of buttons">
+            <img class="top" src="images/green-gingham.png" alt="image of a green gingham pattern">
+            <img class="bottom" src="images/red-gingham.png" alt="image of a red gingham pattern">
+            <img class="button1"src="images/" alt="photo of buttons">
+            <img class="button2" src="" alt="photo of buttons">
+            <img class="button3" src="" alt="photo of buttons">
         </div>
 
-        <nav class="picture-nav">
-            <a class="home" href="../index.html"><img src="images/" alt="photo of home"></a>
-            <a class="next" href="transportation.html">Start Journey<img src="images/" alt="photo of an arrow"></a>
-        </nav>
-    </main>
+
+             <nav class="picture-nav">
+            <a class="home" href="../../index.html"><img class="home-pic" src="images/home-icon.png" alt="photo of home"></a>
+            <a class="next" href="transportation.html"><img class="arrow" src="images/purple-arrow.png" alt="photo of an arrow"></a>
+    </nav>
     
+    </main>
+
+   
 </body>
 </html>
