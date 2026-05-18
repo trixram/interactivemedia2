@@ -13,7 +13,7 @@
 h3 {
       font-family: "Luckiest Guy", cursive;
   font-weight: 400;
-      color: rgb(209, 160, 47);
+      color: rgb(151, 123, 58);
       letter-spacing: 2px;
 
 }
@@ -320,8 +320,9 @@ position: absolute;
     justify-content: center;
     align-items: center;
     gap: 200px;
-    top: -15px;
+    top: 25px;
     position: relative;
+    z-index: 1;
 }
 
 .transportation-options .keys img,.transportation-options .bus img {
@@ -856,7 +857,7 @@ overflow-y: hidden;
 
 .ending-main article {
     position: relative;
-    margin-top: 10px;
+    margin-top: 5px;
       display: flex; 
     flex-direction: column;
     justify-content: center;
