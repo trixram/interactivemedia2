@@ -720,6 +720,14 @@ margin: 20px auto;
     width: 100%;
 }
 
+input:focus {
+     border: 4px solid rgb(178, 85, 178);
+    box-shadow: 0 0 8px #b388ff;
+    outline: none;
+    transform: scale(1.1);
+    
+}
+
 
 .split-left .form-fields, .split-right .form-fields {
       display: flex; 

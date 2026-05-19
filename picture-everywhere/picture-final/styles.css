@@ -1,4 +1,4 @@
-/* picture main menu */
+
 .picture-body {
     position: relative;
     background-image: url(images/orange-gingham.png);
@@ -10,11 +10,12 @@
 }
 
 
-h3 {
+h2 {
       font-family: "Luckiest Guy", cursive;
   font-weight: 400;
       color: rgb(151, 123, 58);
       letter-spacing: 2px;
+      font-size: 20px;
 
 }
 p {
@@ -49,11 +50,12 @@ p {
         transform: rotate(15deg) scale(1.1) translateY(-2px);
         filter: drop-shadow(0 0 14px #ffe7a3);
         opacity: 1;
-        filter: drop
     }
 
     50% {
-        transform: rotate(22deg) scale(1.05) transl-shadow(0 0 18px #fff1b8);
+        transform: rotate(22deg) scale(1.05);
+        
+      filter:  drop-shadow(0 0 18px #fff1b8);
     }
 
     75% {
