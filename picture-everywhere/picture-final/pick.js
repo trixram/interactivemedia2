@@ -3,6 +3,7 @@
     console.log('reading JS');
 
     // picture html script
+    
     const place1 =document.querySelector('.place1');
     const placeText = document.querySelector('.spot-text');
     const place2 = document.querySelector('.place2');

@@ -5,6 +5,7 @@
   
     // pick a spot
 
+
     const bus = document.querySelector('.hover-me');
     const busPara = document.querySelector('.bus-text');
     const image = document.querySelector('.after')
